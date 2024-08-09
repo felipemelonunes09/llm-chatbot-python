@@ -39,7 +39,9 @@ template-path: "./template.txt"
 
 default-vector-store-k: 5
 default-llm-temperature: 0
-
+```
+```python
+  python3 main.py --config=<filepath>
 ```
 
 
