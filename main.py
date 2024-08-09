@@ -71,7 +71,9 @@ def main(argv):
                 k = int(argument)
                 
             elif option == '-t':
-                temperature = int(argument)
+                temperature = float(argument)
+                if temperature > 1:
+                    logging.warning("temperatures above 1 will generate unreliable awnser")
             
             if option == '--lc':
                 contexts = utils.get_contexts()
