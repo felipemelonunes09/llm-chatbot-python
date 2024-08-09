@@ -7,4 +7,9 @@ Este projeto é uma aplicação que utiliza modelos de linguagem (LLMs) para res
 ## Execução
 
 ```bash
-main.py --question [options] 
+OPENAI_API_KEY=<api_key> main.py --question [options]
+```
+
+```bash
+OPENAI_API_KEY=<api_key> main.py -q "<question>" [options] 
+```
