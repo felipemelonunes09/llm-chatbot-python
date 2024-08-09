@@ -6,18 +6,18 @@ Este projeto é uma aplicação que utiliza modelos de linguagem (LLMs) para res
 
 ## Execução
 
-```bash
+```python
 OPENAI_API_KEY=<api_key> python3 main.py --question [options]
 ```
 
-```bash
+```python
 OPENAI_API_KEY=<api_key> python3 main.py -q "<question>" [options] 
 ```
 
 
 ## Configuração 
 Instale as dependências 
-```
+```python
 pip install pip install -r ./requirements.txt
 ```
 
