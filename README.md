@@ -56,6 +56,14 @@ O comando para gerar os embeddings é:
 python3 main.py --embedding=<url> -s -f <filename>
 ```
 
+### Scrap
+Esta aplicação utiliza o conceito de injeção de contexto. Para isso, é necessário extrair informações de outras fontes (nesta versão, apenas da web). O comando a seguir é utilizado para obter uma URL, extrair as informações e armazenar o resultado no diretório ./context.
+
+-f é um parâmetro opcional para atribuir um nome ao arquivo final.
+```python
+python3 main.py --scrap=<url> -f example_01.txt
+```
+
 
 
 
