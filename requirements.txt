@@ -1,0 +1,8 @@
+beautifulsoup4
+requests
+langchain
+langchain_openai
+pandas
+numpy
+openai
+chromadb

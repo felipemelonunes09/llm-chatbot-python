@@ -1,0 +1,66 @@
+# Ignore everything in the 'context' directory
+context/*
+
+# Except for the directory itself
+!context/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+*.log
+
+# Pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.orig
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Flask
+instance/
+.env
+.envrc
+
+# MyPy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Virtual env
+venv
+
+# 
+apikey.txt

@@ -1,0 +1,10 @@
+chunk-size: 500
+chunk-overlap: 20
+
+embedding-model: "text-embedding-ada-002"
+context-path: "./context"
+template-path: "./template.txt"
+
+default-vector-store-k: 5
+default-llm-temperature: 0
+
