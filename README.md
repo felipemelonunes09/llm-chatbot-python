@@ -64,6 +64,45 @@ Esta aplicação utiliza o conceito de injeção de contexto. Para isso, é nece
 python3 main.py --scrap=<url> -f example_01.txt
 ```
 
+### Listando contextos
+Para listar os contextos que ja foram salvos 
+```python
+python3 main.py --lc
+```
+### Fazendo Perguntas ao Modelo 
+Para fazer uma pergunta, basta utilizar este comando e, em seguida, informar a sua dúvida.
+```python
+python3 main.py -q "<question>"
+```
+Você também tem a opção de não fornecer a pergunta com este comando. No entanto, a aplicação solicitará um input em seguida.
+```python
+python3 main.py --question
+```
+É possível especificar um contexto único para ser utilizado. Caso essa opção não seja fornecida, a aplicação considerará todos os arquivos dentro do diretório ./context.
+```python
+python3 main.py --question -c example01.txt
+```
+A opção K define o nível de busca no vector store. Quanto menor esse número, menos texto será inserido no contexto; quanto maior, mais texto será incluído.
+```python
+python3 main.py --question -k 10
+```
+É possível também definir a temperatura da resposta na aplicação. Quanto mais próxima de 0, mais concisa e menos criativa será a resposta. Quanto mais próxima de 1, mais criativa e menos precisa será a resposta.
+```python
+python3 main.py --question -t 0.2
+```
 
+É possível encadear comandos, permitindo extrair dados de uma URL e utilizá-los imediatamente para responder à pergunta do usuário."
+```python
+python3 main.py --question --scrap=<url>
+```
+Outro exemplo de encadeamento das opções
+```python
+python3 main.py --question --scrap=<url> -f <filepath> -c <filename> -k 10 -t 0.9 --config=<filepath>
+```
+
+Embora não tenha sido explicitado nos exemplos, é necessário passar a chave da API como uma variável de ambiente sempre que executar os comandos. A aplicação não salvará essa chave em nenhum diretório em momento algum.
+```python
+OPENAI_API_KEY=<key> python3 main.py [comandos]
+```
 
 
