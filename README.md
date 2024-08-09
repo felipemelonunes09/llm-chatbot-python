@@ -48,7 +48,9 @@ default-llm-temperature: 0
 Nesta aplicação, você pode fornecer uma URL para realizar web scraping e exportar um arquivo .csv contendo os valores dos embeddings.
 
 -s é um comando para salvar a estrutura.
+
 -f é um parâmetro opcional para atribuir um nome ao arquivo final.
+
 O comando para gerar os embeddings é:
 ```python
 python3 main.py --embedding=<url> -s -f <filename>
