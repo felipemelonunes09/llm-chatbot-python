@@ -9,6 +9,8 @@ import openai
 import pandas
 import datetime
 import utils
+import pyfiglet
+
 
 
 def help():
@@ -31,6 +33,10 @@ def help():
     
     
 def main(argv):
+    
+    f = pyfiglet.Figlet(font='slant')
+    print(f.renderText('LLM Application'))
+
     
     def get_embedding(text, model=config.EMBEDDING_MODEL):
         text = text.replace("\n", " ")
