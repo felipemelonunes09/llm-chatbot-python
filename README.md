@@ -1,8 +1,9 @@
 # llm-chatbot-python
 
 **Status Atual: ✅ Concluído**
-Google Colab Article: 
 
+Google Colab Article: 
+https://github.com/felipemelonunes09/llm-chatbot-python/blob/main/ai_chatbot_python.ipynb
 
 
 ## Visão Geral
