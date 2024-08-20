@@ -1,6 +1,7 @@
 # llm-chatbot-python
 
 **Status Atual: ✅ Concluído**
+Google Colab Article: 
 
 
 
